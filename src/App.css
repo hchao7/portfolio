@@ -7,119 +7,58 @@
 /* npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize          */
 /* @import "component1.css";   Component-specific stylesheets, if any.   */
 
-/* Text-Weight: Assistant, Heading Fonts: Comfortaa */
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Comfortaa:wght@300..700&display=swap'); 
-/* Add fonts from a hosted services like Google Fonts.   */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-weight: normal;
+}
+
+#root, #__next {
+  isolation: isolate;
+  height: 100%;
+}
+
+html, body, main, section {background-color: rgb(243, 239, 235);}
+
+body {
+  min-width: 370px;
+}
 
 /*   ----- Variables  -----  */
 :root {
---lightBlue: #d9eef2;
---medBlue: #31b6ce;
---darkBlue: #4686A9;
---lightGreen: #d6e8b8; /* contrasting color */
---darkGreen: #b1d873;  /* contrasting color */
---opacityGreen: #eff5e0ee;
 }
 
-/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
-body {       /* Can alternatively define in html {}. */
-background-image: url('images/japan-mount-fuji.jpg');
-background-position: top left;
-background-repeat: no-repeat;
-background-size: cover;
-color: var(--darkBlue);
-font-family: Assistant, serif; /* Define with at least one font name and its related generic family name.*/
-margin-top: 0;
-margin-bottom: 0;
-margin-left: auto;
-margin-right: auto;
-padding: 20px 20px;
-max-width: 940px;
-min-width: 300px;
-}
-
-/*  ----- Page layout blocks -----  */
-header {
-background-color: var(--lightGreen);
-color: var(--medBlue);
-text-align: center;
-padding: 10px;
-margin-bottom: 20px;
-border: 4px dotted var(--medBlue);
-}
-main {
-background-color: var(--opacityGreen);
-padding: 2%;
-margin-top: 20px;
-margin-bottom: 20px;
-border: 4px solid var(--medBlue);
-}
-section {}
-article {
-padding: 1%;
-}
-#servers {
-  border-bottom: 2px dotted var(--darkBlue);
-}
-#frontEndDesign {
-  border-bottom: 2px dotted var(--darkBlue);
-}
-#images {
-  border-bottom: 2px dotted var(--darkBlue);
-}
-div {}
-aside {}
-footer {
-background-color: var(--lightGreen);
-text-align: center;
-padding: 5px;
-margin-top: 0px;
-margin-bottom: 20px;
-border: 4px dotted var(--medBlue);
-}
-
-/* ----- Anchors ----- Text links */
-a {}
-a:link {
-  color: var(--darkGreen);
-}
-a:hover {
-  color: var(--medBlue);
-}
-a:active {}
-a:visited {}
-
-.react-icon-button {
-  display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
-  border: 1px solid var(--darkBlue);
-  border-radius: 5px;
-  background-color: var(--lightBlue);
-  color: var(--darkblue);
-  display: inline-block;
-  padding: 10px 20px 13px 17px;
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 1;
-  text-decoration: none;
-}
-
-i {
-  font-size: 140%;
-}
-
-.react-icon-button:hover {
-  border: 1px solid var(--medBlue);
-}
-
-.quantity-column {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
+/* Parent elements */
 
 /*  ----- Navigation ----- Override text links for navigation only.  */
 nav {
@@ -127,351 +66,230 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
+gap: 20px;
 margin: 20px 0px 20px 0px;
 }
 
 nav a {
-border: 3px solid var(--darkGreen);
-border-radius: 5px;
-background-color: var(--lightBlue);
-color: var(--darkBlue);
-margin: 5px 10px 5px 10px;
-padding: 10px 20px 10px 20px;
-font-size: 1.5em;
-font-weight: bold;
-line-height: 1;
-text-decoration: none;
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  border: 3px solid rgb(113, 189, 215);
+  padding: 5px 2% 5px 2%;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(243, 239, 235);
 }
 
 nav a:hover {
-background-color: var(--lightGreen);
+  background-color: lightblue;
 }
 
-.local {
-border-bottom: 2px dotted var(--darkBlue);
-padding: 0px 0px 20px 0px;
-margin: 0px 0px 10px 0px;
+/* My CSS*/
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 30px 0px 30px 0px;
+  background-color: rgb(243, 239, 235);
+  /* border: 1px solid black; */
 }
 
-.local a {
-border-radius: 0px;
-border: 2px dotted var(--darkBlue);
-background-color: var(--lightBlue);
-color: var(--darkBlue);
-margin: 5px 5px 5px 5px;
-padding: 5px 10px 5px 10px;
-font-size: 1em;
-font-weight: normal;
-line-height: 1;
+.project__visual {
+  width: 600px;
+  height: 800px;
+  max-width: 90%;
+  /* background-color: lightblue; */
+  /* border: 1px solid black; */
+  margin-right: 5%;
 }
 
-.local a:hover {
-background-color: var(--darkGreen);
+.project__img {
+  width: 700px;
+  height: auto;
+  max-width: 90%;
+  margin-right: 5%;
 }
 
-.action-button {
-  font-size: 25px;
+.project__video {
+  width: 1000px;
+  height: 700px;
+  max-width: 90%;
+  margin-right: 5%;
 }
 
-.action-button:hover {
-  color: var(--medBlue);
-}
-
-
-/*  -----  Typography  ----- */
-p {}
-br {}
-ol, ul, dl {
+.project__text {
+  width: 800px;
+  height: auto;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-}
-li {}
-dt {}
-dd {}
-
-h1, h2, h3, h4, h5, h6 {font-family: Comfortaa, serif; color: var(--medBlue);} 
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
-
-abbr {}
-acronym {}
-address {}
-blockquote {}
-q {}
-cite {}
-em {}
-hr {}
-mark {}
-s {}
-span {}
-strong {}
-sub {}
-sup {}
-time {}
-
-/*  ----- Coding or instructional typography ----- */
-pre {}
-code {}
-kbd {}
-samp {}
-var {}
-del {} 
-ins {}
-
-/*  ----- Table ----- */
-table {border-collapse:collapse;
-min-width: 70%;
-max-width: 100%;
-margin: 0 auto;
-}
-caption {
-background-color: var(--darkBlue); 
-border-bottom: 1px solid var(--darkBlue); 
-color:var(--lightBlue); 
-font-family: Comfortaa;
-font-size: 1.3em;
-font-weight: 700; 
-padding: 2%;
-margin-top: 5%;
-margin-bottom: 2%;}
-thead {}
-tbody {}
-tfoot {}
-tr {}
-tr:nth-child(even) {background-color: var(--lightGreen);}
-th {border: 2px solid var(--darkBlue);
-    width: auto;
-    padding: 3px;}
-td {text-align: center;
-}
-td:nth-child(2) {
-  width: 10%;
-}
-td:nth-child(5) {
-  width: 10%;
-}
-td:nth-child(6) {
-  padding-left: 5px;
-  text-align: left;
-  width: 25%;
-}
-colgroup {}
-data {}
-datalist {}
-tr td {
-border: 1px dotted var(--darkBlue);
-}
-td label{border-bottom: 0px;}
-tr th {
-background-color:var(--lightGreen);
+  justify-content: center;
+  gap: 10px;
+  /* background-color: lightpink; */
+  /* border: 1px solid black; */
 }
 
-/*  ----- Form ----- */
-/* Empty properties are meant to be filled in, from Exploration on Form Style */
-form, button, input, select, textarea {font-family: Assistant, serif;}
-fieldset {
-border: 2px solid var(--medBlue);
-border-top: 4px dotted var(--medBlue);
-background-color: var(--lightBlue);
-margin-bottom: 2%;
-margin-top: 2%; 
-padding-left: 2%;
-}
-legend {
-  border: 4px dotted var(--medBlue);
-  background-color: var(--opacityGreen);
-  color: var(--medBlue);
-  font-size: 15px;
-  padding: 1.5%;
-}
-label {
-display: block;
-width: fit-content;
-height: auto;
-border-bottom: 2px dotted var(--darkBlue);
-margin-top: 2%;
-margin-bottom: 0.5%;
-font-size: 90%;
-color: var(--darkBlue);
-}
-/* Accomodate fingers and hands by increasing font-size & padding 
-& inherit body font */
-input, button, textarea, select {
-margin-top: 1%;
-font-size: 110%;
-padding: 1%;
-font-family:inherit;
-}
-button {
-border-radius: 10px;
-border: 2px solid var(--medBlue);
-margin-top: 2%;
-background-color: var(--opacityGreen);
-color: var(--medBlue);
-padding-left: 10%;
-padding-right: 10%;
-padding-top: 5%;
-padding-bottom: 5%;
-width: 80px;
-font-weight: 500;
-}
-button:hover {
-background-color: var(--lightGreen);
-}
-input {
-padding: 1%;
-font-size: 100%;
-}
-select {
-border: 2px solid var(--medBlue);
-color: var(--darkBlue);
-background-color: white;
-padding: 1%;
-}
-optgroup {}
-option {}
-textarea {
-border: 2px solid var(--medBlue);
-width: 80%;
-height: 200px;
+.project__heading {
+  /* width: 100px; */
+  /* height: 100px; */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  /* background-color: lightblue; */
 }
 
-.question-label {
-border-bottom: 2px dotted var(--darkBlue);
+.project__subheading {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  /* background-color: mediumturquoise; */
 }
 
-.no-dotted {
-border: none;
+.project__description {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
 
-output {}
-meter {}
-progress {}
-/* ----- Pseudo-class for ----- */
-
-
-
-/* ----- Media ----- */
-figure {
-}
-figcaption {
-
-}
-figure img {
-
+.project__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1%;
+  row-gap: 5px;
+  padding: 1%;
+  /* border: 1px solid blue; */
 }
 
-header img {
-width: 30px;
-height: auto;
-}
-svg {}
-picture {}
-source {}
-iframe {}
-video {}
-audio {}
-embed {}
-object {}
-
-/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
-.gallery {
-display: flex;
-flex-flow: row wrap;
-margin: 0;
-padding: 0;
-justify-content: center;
+.project__button {
+  font-family: "Source Code Pro", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  border: 3px solid rgb(113, 189, 215);
+  padding: 0% 2% 0% 2%;
+  text-decoration: none;
+  color: black;
 }
 
-#gallery-h3 {
-width: 100%;
+.project__button:hover {
+  background-color: lightblue;
 }
 
-.gallery figure {
-margin-left: 0px;
-margin-right: 20px;
-padding: 1%;
-border: 3px solid var(--medBlue);
+.emphasis {
+  color: rgb(113, 189, 215);
+  font-weight: 600;
 }
 
-.gallery figcaption {
-width: 400px;
-height: auto;
+.emphasis--black {
+  font-weight: 600;
 }
 
-.gallery img {
-width: 400px;
-height: auto;
-border-bottom: 4px solid var(--darkGreen);
-}
-
-.floatright {}
-.floatleft {}
-.center-middle {}
-
-.ten {}
-.twenty {}
-.thirty {}
-.forty {}
-.fifty {}
-.sixty {}
-.seventy {}
-.eighty {}
-
-.radius {}
-.circle {}
-.boxshadow {}
-.tshadow {} 
-.gradient {}
-.shape {}
-
-@keyframes App-logo {}
-
-/*   ===== for mobile styles ===== */
-@media (max-width: 600px) {
-.gallery figure {
-  width: 200px;
+/* Home Page*/
+.center {
+  width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-.gallery figcaption {
-  width: 200px;
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
   height: auto;
+  padding: 0% 0% 0% 0%;
+  margin: 7% 0 0 0;
+  background-color: rgb(243, 239, 235);
 }
-.gallery img {
-  width: 200px;
+
+.profile__image {
+  border-radius: 50%;
+  width: 500px;
   height: auto;
-}
+  border: 5px solid rgb(113, 189, 215);
+  flex-shrink: 0;
 }
 
-@media (max-width: 540px) {
-  table {border-collapse:collapse;
-    min-width: 0%;
+.profile__component {
+  width: auto;
+}
+
+.profile__heading {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  color: rgb(113, 189, 215);
+  margin: 0px 0px 0px 0px;
+  max-width: 90%;
+}
+
+.profile__description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 1500px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-  caption, tr {
-    font-size: 10px;
+
+  .project__visual {
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    margin-right: 0;
+  }
+
+  .project__video {
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    margin-right: 0;
+  }
+
+  .project__img {
+    /* margin-top: 5%; */
+    /* margin-bottom: 5%; */
+    margin-right: 0;
+  }
+
+  .project__text {
+    justify-content: flex-start;
+    width: 500px;
+    margin-bottom: 5%;
   }
 }
 
-@media (max-width: 370px) {
-  table {border-collapse:collapse;
-    min-width: 0%;
+@media screen and (max-width: 1800px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0%;
+    width: 100%;
+    align-items: center;
   }
-  caption, tr {
-    font-size: 7px;
+
+  .profile__component {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 0%;
+    max-width: 100%;
+    align-items: center;
   }
 }
-
-/*   ===== TABLET  media query overrides mobile styles ===== */
-@media all and (min-width: 600px) {
-}
-
-/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
-@media all and (min-width: 1080px) {}
-
-/*   ===== PRINT  media query overrides previous styles =====  */
-@media print {}

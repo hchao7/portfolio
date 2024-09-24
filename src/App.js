@@ -13,6 +13,9 @@ import HomePage from './pages/HomePage.js';
 import TopicPage from './pages/TopicPage.js';
 //import GalleryPage from './pages/GalleryPage.js';
 import OrderPage from './pages/OrderPage.js';
+import FrontEndProjectsPage from './pages/FrontEndProjectsPage.js';
+import OtherProjectsPage from './pages/OtherProjectsPage.js';
+import LeadershipPage from './pages/LeadershipPage.js';
 //import ContactPage from './pages/ContactPage.js';
 
 // For Create and Edit, use the form OR table design; not both.
@@ -31,10 +34,10 @@ function App() {
     <>
       <BrowserRouter>
 
-          <header>
+          {/* <header>
             <h1>Helen <img src="/android-chrome-192x192.png" /> Chao</h1>
             <p>This is a portfolio of my interests, hobbies, coding projects, and cafe discoveries. Feel free to log your cafe visits too!</p>
-          </header>
+          </header> */}
 
           <Navigation />
 
@@ -46,16 +49,18 @@ function App() {
                     {/* <Route path="/" element={<MoviesPage setMovie={setMovieToEdit}/>} /> */}
                     <Route path="/" element={<HomePage/>} />
                     <Route path="/pages/HomePage.js" element={<HomePage/>} />
-                    <Route path="/pages/TopicPage.js" element={<TopicPage/>} />
-                    <Route path="/pages/OrderPage.js" element={<OrderPage/>} />
-
+                    {/* <Route path="/pages/TopicPage.js" element={<TopicPage/>} />
+                    <Route path="/pages/OrderPage.js" element={<OrderPage/>} /> */}
+                    <Route path="/pages/FrontEndProjectsPage.js" element={<FrontEndProjectsPage/>} />
+                    <Route path="/pages/OtherProjectsPage.js" element={<OtherProjectsPage/>} />
+                    <Route path="/pages/LeadershipPage.js" element={<LeadershipPage/>} />
                 </Routes>
               </section>
           </main>
 
-          <footer>
+          {/* <footer>
             <p>&copy; 2024 Helen Chao</p>
-          </footer>
+          </footer> */}
 
       </BrowserRouter>
     </>
