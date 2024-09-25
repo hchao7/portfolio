@@ -50,7 +50,7 @@ function FrontEndProjectsPage() {
           </ul>
         </div>
         <div class="project__links">
-          <a href="https://github.com/hchao7/recipe-page-main" target="_blank"
+          <a href="https://github.com/hchao7/portfolio" target="_blank"
             class="project__button">Git Repo</a>
         </div>
       </div>
