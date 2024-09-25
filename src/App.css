@@ -240,7 +240,7 @@ nav a:hover {
   max-width: 90%;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
   .project {
     display: flex;
     flex-direction: column;
