@@ -31,7 +31,6 @@ import EditCafePageForm from './pages/EditCafePageForm';
 function App() {
 
   return (
-    <>
       <BrowserRouter>
 
           {/* <header>
@@ -63,7 +62,6 @@ function App() {
           </footer> */}
 
       </BrowserRouter>
-    </>
   );
 }
 
