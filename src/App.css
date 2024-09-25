@@ -214,7 +214,7 @@ nav a:hover {
 
 .profile__image {
   border-radius: 50%;
-  width: 500px;
+  width: 400px;
   height: auto;
   border: 5px solid rgb(113, 189, 215);
   flex-shrink: 0;
