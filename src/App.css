@@ -1,11 +1,5 @@
-/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
-/*  ===== See tablet, desktop, and print @media queries at the bottom. */
-
-
 /*   ----- Imports  -----  */
 @import '/node_modules/modern-normalize/modern-normalize.css';  
-/* npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize          */
-/* @import "component1.css";   Component-specific stylesheets, if any.   */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
@@ -54,12 +48,6 @@ body {
   min-width: 370px;
 }
 
-/*   ----- Variables  -----  */
-:root {
-}
-
-/* Parent elements */
-
 /*  ----- Navigation ----- Override text links for navigation only.  */
 nav {
 display: flex;
@@ -85,7 +73,8 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/* My CSS*/
+/* My CSS */
+/* FrontEndProjects Page, Leadership Page, OtherProjects Page */
 .project {
   display: flex;
   flex-direction: row;
@@ -96,15 +85,12 @@ nav a:hover {
   margin: auto;
   padding: 30px 0px 30px 0px;
   background-color: rgb(243, 239, 235);
-  /* border: 1px solid black; */
 }
 
 .project__visual {
   width: 600px;
   height: 800px;
   max-width: 90%;
-  /* background-color: lightblue; */
-  /* border: 1px solid black; */
   margin-right: 5%;
 }
 
@@ -130,24 +116,18 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  /* background-color: lightpink; */
-  /* border: 1px solid black; */
 }
 
 .project__heading {
-  /* width: 100px; */
-  /* height: 100px; */
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 30px;
-  /* background-color: lightblue; */
 }
 
 .project__subheading {
   font-family: "Source Code Pro", sans-serif;
   font-weight: 600;
   font-size: 25px;
-  /* background-color: mediumturquoise; */
 }
 
 .project__description {
@@ -164,7 +144,6 @@ nav a:hover {
   gap: 1%;
   row-gap: 5px;
   padding: 1%;
-  /* border: 1px solid blue; */
 }
 
 .project__button {
@@ -249,20 +228,14 @@ nav a:hover {
   }
 
   .project__visual {
-    /* margin-top: 5%; */
-    /* margin-bottom: 5%; */
     margin-right: 0;
   }
 
   .project__video {
-    /* margin-top: 5%; */
-    /* margin-bottom: 5%; */
     margin-right: 0;
   }
 
   .project__img {
-    /* margin-top: 5%; */
-    /* margin-bottom: 5%; */
     margin-right: 0;
   }
 
