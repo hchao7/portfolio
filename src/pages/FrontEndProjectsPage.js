@@ -6,15 +6,13 @@ function FrontEndProjectsPage() {
       <iframe src="https://hchao7.github.io/recipe-page-main/"
         class="project__visual"></iframe>
       <div class="project__text">
-        <h2 class="project__heading">Hands-on experience with <span class="emphasis">HTML, CSS, and
-          Figma</span> through FrontEnd Mentor (FEM) community</h2>
+        <h2 class="project__heading"><span class="emphasis">FrontEnd Mentor Design Challenges:</span> Hands-on experience with HTML, CSS, and Figma</h2>
         <div class="project__component">
           <h3 class="project__subheading">Background</h3>
           <ul class="project__description">
-            <li>FEM provides professional design challenges</li>
-            <li>Practiced implementing designs by working from provided Figma
-              files and style guide, mimicking an industry-standard workflow</li>
-            <li>Wrote clean CSS using the BEM Methodology </li>
+            <li>Practiced HTML and CSS skills by <span class="emphasis--black">completing four design challenges</span> on the FrontEnd Mentor platform</li>
+            <li>Implemented designs based on Figma files and style guides, simulating a <span class="emphasis--black">professional workflow</span></li>
+            <li>Wrote <span class="emphasis--black">clean and maintainable CSS</span> using BEM methodology</li>
           </ul>
           </div>
           <div class="project__links">
@@ -31,22 +29,14 @@ function FrontEndProjectsPage() {
     <img src={`${process.env.PUBLIC_URL}/prev-website.png`} alt="Description of the image"
         class="project__img"/>
       <div class="project__text">
-        <h2 class="project__heading"><span class="emphasis">Revamped</span> my
-          school project into <span
-            class="emphasis">the website you're on</span>, using <span
-            class="emphasis">React</span> and design skills learned from
-          FEM</h2>
+        <h2 class="project__heading"><span class="emphasis">Portfolio Website:</span> Developed using React and design skills learned from FEM</h2>
         <div class="project__component">
           <h3 class="project__subheading">Background</h3>
           <ul class="project__description">
-            <li><span class="emphasis--black">Custom Styling:</span> Replaced
-              the school-provided styling template with my own design and used
-              BEM methodology for better organization
-              and maintainability</li>
-            <li><span class="emphasis--black">Responsive Design:</span> Made
-              website fully responsive to mobile and desktop sizes</li>
-            <li><span class="emphasis--black">Enhanced React Knowledge:</span> Successfully implemented all changes while working with the React framework 
-            that was used to build the original website (pictured for reference)</li>
+            <li>This website was revamped from my final project for a web dev class, pictured on the left</li>
+            <li>Replaced original stylesheet with <span class="emphasis--black">my own BEM-structured design</span></li>
+            <li>Made website <span class="emphasis--black">fully responsive</span> to mobile and desktop sizes</li>
+            <li>Used HTML, CSS, and JavaScript to create design elements and <span class="emphasis--black">Git</span> for version control to <span class="emphasis--black">track changes effectively</span></li>
           </ul>
         </div>
         <div class="project__links">

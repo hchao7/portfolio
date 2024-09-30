@@ -9,25 +9,18 @@ function OtherProjectsPage() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <div class="project__text">
-        <span class="emphasis"></span>
-        <h2 class="project__heading">ChessVar project: An implementation of a
-          <span class="emphasis"> chess
-            game</span> variant for <span class="emphasis">console-based</span> play</h2>
+        <h2 class="project__heading"><span class="emphasis">ChessVar Project:</span> Implemented a chess game for console-based play</h2>
         <div class="project__component">
           <h3 class="project__subheading">Background</h3>
           <ul class="project__description">
             <li>Highlights expertise in Python, object-oriented
               design, and game development</li>
-            <li><span class="emphasis--black">Variant-Specific Rules: </span>
-              Encodes unique rules and piece movements specific to the chess
-              variant</li>
-            <li><span class="emphasis--black">Console-Based Interaction: </span>
-              Facilitates gameplay through a
-              text-based interface, allowing players to make moves, view game
-              status, and interact with the board using the console</li>
-            <li><span class="emphasis--black">Game State Management: </span>
-              Manages game state effectively, including piece positions,
-              turn tracking, and detection of winning scenarios</li>
+            <li>Applied <span class="emphasis--black">problem-solving skills </span>
+            to manage game state, track player turns, piece positions, and movement rules</li>
+            <li>Utilized Python's <span class="emphasis--black">unittest framework to rigorously test </span>
+            functions and gameplay mechanics for an error-free experience</li>
+            <li>Implementation includes <span class="emphasis--black">special ‘fairy’ chess 
+            pieces </span> like the hunter and falcon, which are kept in reserve until the game reaches a certain state</li>
           </ul>
         </div>
         <div class="project__component">
@@ -36,7 +29,7 @@ function OtherProjectsPage() {
             <li><span class="emphasis--black">0:00 - 1:10 | </span>
               Play-by-play of a chess game</li>
             <li><span class="emphasis--black">1:10 - END  | </span>
-              Special 'fairy' chess pieces from the reserve placed on board</li>
+            'Fairy' chess pieces from the reserve are placed on the board</li>
           </ul>
         </div>
         <div class="project__links">

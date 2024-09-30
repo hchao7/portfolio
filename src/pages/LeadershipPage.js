@@ -7,24 +7,13 @@ function LeadershipPage() {
         class="project__img"/>
       <div class="project__text">
         <span class="emphasis"></span>
-        <h2 class="project__heading">Led execution of <span class="emphasis">UC
-            x Imagine</span>, a two-day <span class="emphasis">datathon </span>
-          with coding workshops and guest panels</h2>
+        <h2 class="project__heading"><span class="emphasis">UC x Imagine:</span> Led execution of a two-day datathon with 6 coding workshops and 12 guest panelists</h2>
         <div class="project__component">
           <h3 class="project__subheading">Background</h3>
           <ul class="project__description">
-            <li>Fundraise $465 for education nonprofit Imagine Scholar by
-              engaging 56 attendees from 8 UC schools</li>
-            <li><span class="emphasis--black">Collaborate:</span> Work with
-              Berkeley Data Science Society, engineering grad
-              students, and UCLA staff to create the datathon prompt on load
-              shedding and design a comprehensive coding curriculum for 6
-              workshops</li>
-            <li><span class="emphasis--black">Outreach:</span> Reached out to
-              and secured 12 data scientists to share their
-              experiences across five diverse panels, covering various
-              industries, early career insights, and real-world case studies in
-              data science
+            <li>Fundraised $465 for education nonprofit Imagine Scholar by <span class="emphasis--black">engaging 56 attendees from 8 UC schools</span></li>
+            <li><span class="emphasis--black">Collaborated with Data Science Society at Berkeley</span>, engineering grad students, and UCLA staff to create the datathon prompt on load shedding and design coding workshop curriculum</li>
+            <li>Reached out to and <span class="emphasis--black">secured 12 data scientists </span>to share their experiences across 5 diverse panels, covering various industries, early career insights, and real-world case studies in data science
             </li>
           </ul>
         </div>
